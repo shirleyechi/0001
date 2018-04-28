@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class 計算1到N之間屬於5或7的倍數sum {
+	public static void main(String args[]){
+		Scanner input=new Scanner(System.in);
+		
+		int N=input.nextInt();
+		
+		int sum=((5*(N/5)+5)*(N/5))/2+((7*(N/7)+7)*(N/7))/2-2*((35*(N/35)+35)*(N/35))/2;
+				
+		System.out.println(sum);
+		
+	}
+
+}
